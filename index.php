@@ -2,7 +2,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/style.css" />
 
-        <?php $colorScheme = get_query_var( 'color_scheme', 'blue' ) ?>
+        <?php $colorScheme = get_query_var( 'color_scheme', get_theme_mod('color_scheme_radio_setting') ) ?>
 
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/style-partials/<?php echo $colorScheme;?>.css" />
 
