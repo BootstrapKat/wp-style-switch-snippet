@@ -38,5 +38,33 @@
         <div>
             <?php do_action( 'cws_content' ); ?>
         </div>
+        <div>
+            <h2>Have some links:</h2>
+            <ul>
+            <?php 
+                $defaults = array(
+                    array(
+                        'link_text' => esc_attr__( 'Home', 'textdomain' ),
+                        'link_url'  => '33',
+                    )
+                );
+
+                $quickLinks = get_theme_mod('ws_quicklinks_settings', $defaults);
+                foreach( $quickLinks as $link ) {
+                    ?>
+
+                    <li>
+                        <a href="<?php echo get_permalink($link['link_url']);?>">
+                            <?php echo $link['link_text']; ?>
+                        </a>
+                    </li>
+
+                    <?php 
+                }
+            ?>
+
+            </ul>
+
+            
     </body>
 </html>

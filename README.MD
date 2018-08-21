@@ -2,4 +2,4 @@ For more details on what we're doing here, look at https://codex.wordpress.org/F
 
 Specifically the custom query var section.
 
-I'll add the customizer part shortly
+Uses the color selection from the customizer as a default.
